@@ -15,15 +15,6 @@ public class DeckOfCards {
             }
     }
 
-    public void shuffle(){
-        for(int first=0; first<deck.length;first++){
-            int second = randomNumbers.nextInt(NUMBER_OF_CARDS);
-            Cards temp=deck[first];
-            deck[first]=deck[second];
-            deck[second]=temp;
-        }
-    }
-
     public Cards dealCard(){
         if(currentCard<deck.length){
             return deck[currentCard++];
